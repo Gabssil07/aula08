@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="idTexto1">meu <STrong>texto</STrong> do paragrafo</p>
+    <div id = "divTx"> </div>
+</body>
+</html>
+<script>
+    var tx = document.getElementById("idTexto1");
+    //alert(tx.innerText)
+    var txD = document.querySelector("#divTx")
+    txD.innerHTML = tx.innerHTML
+    txD.style.color = "#f00"
+    txD.style.backgroundColor = "#00f"
+</script>
