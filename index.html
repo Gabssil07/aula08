@@ -7,14 +7,19 @@
 </head>
 <body>
     <p id ="idTexto1">meu <STrong>texto</STrong> do paragrafo</p>
-    <div id = "divTx"> </div>
+    <div id = "divTx"> </div> 
+    <form action="">
+        <input type="text" id = "txNome" class ="">
+        <button type="button" id = "btProc">Processar</button>
+    </form>
 </body>
 </html>
 <script>
-    var tx = document.getElementById("idTexto1");
+    //var tx = document.getElementById("idTexto1");
     //alert(tx.innerText)
-    var txD = document.querySelector("#divTx")
-    txD.innerHTML = tx.innerHTML
-    txD.style.color = "#f00"
-    txD.style.backgroundColor = "#00f"
+    //var txD = document.querySelector("#divTx")
+    //txD.innerHTML = tx.innerHTML
+    //txD.style.color = "#f00"
+   //txD.style.backgroundColor = "#00f"
+let txNome = document.querySelector("#txNome")
 </script>
