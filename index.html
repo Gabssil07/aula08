@@ -10,7 +10,7 @@
     <div id = "divTx"> </div> 
     <form action="">
         <input type="text" id = "txNome" class ="">
-        <button type="button" id = "btProc" onclick="exibirdados">Processar</button>
+        <button type="button" id = "btProc">Processar</button>
     </form>
 </body>
 </html>
@@ -21,9 +21,20 @@
     //txD.innerHTML = tx.innerHTML
     //txD.style.color = "#f00"
    //txD.style.backgroundColor = "#00f"
-let txNome = document.querySelector("#txNome")
-var txD = document.querySelector("#divTx")
-function exibirdados(){
+    var txD = document.querySelector("#divTx")
+    let txNome = document.querySelector("#txNome")
+    let b = document.querySelector("#btProc")
+    b.addEventListener('click', exibirDados)
+    b.addEventListener('mouseout', limparDados)
+
+function exibirDados(){
  txD.innerHTML = txNome.value 
+ txD.style.backgroundColor = "#0f0"
+}
+function limparDados(){
+    txD.innerHTML = "" 
+    txD.style.backgroundColor = "#000"
+    txD.style.backgroundColor = "#fff"
+   
 }
 </script>
